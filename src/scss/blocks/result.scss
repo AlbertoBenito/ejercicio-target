@@ -1,0 +1,27 @@
+@use '../mixins/pseudo.scss' as *;
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include pseudo (179px,72px){
+        top: 124px;
+        left: 74px;
+        border-radius: 10px 10px 10px 10px;
+        background-color: var(--color--logo);
+        
+    }
+
+    &__h2{ 
+    margin-right:9px;
+    color: var(--background);
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+    &__p{
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: var(--background);
+    }
+
+}

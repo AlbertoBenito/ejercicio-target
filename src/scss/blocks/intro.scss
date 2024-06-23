@@ -1,0 +1,34 @@
+@use '../mixins/pseudo.scss' as *;
+
+.intro{
+    @include pseudo (326px,201px){
+        top: 30%;
+        left: 20%;
+        border-radius: 10px 100px 10px 10px;
+        background-color: var(--background--card);
+
+    &__logo{
+        display: flex;
+        margin-left: 41px;
+        color: var(--color--logo);
+        }
+    &__h1{
+        margin-left: 13px;
+        font-size: 2.5rem;
+    }    
+       
+    &__icons{
+        display: flex;
+        margin-left:41px;
+        .icon{
+            background-color: var(--background);
+            border-radius: 10px;
+            padding: 12px;
+            margin-right: 16px;
+        }
+
+    }
+
+    }
+
+}
